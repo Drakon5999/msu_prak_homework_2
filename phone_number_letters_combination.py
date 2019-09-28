@@ -6,7 +6,7 @@ import sys
 from builtins import print
 import itertools
 
-digit_to_letters = {
+DIGIT_TO_LETTERS = {
     "1": "-",
     "2": "abc",
     "3": "def",
@@ -25,8 +25,8 @@ def main():
     number = input("Please provide a number: ").strip()
     lists = []
     for digit in number:
-        if digit in digit_to_letters:
-            lists.append(digit_to_letters[digit])
+        if digit in DIGIT_TO_LETTERS:
+            lists.append(DIGIT_TO_LETTERS[digit])
         else:
             print("Bad digit {}".format(digit))
             return 1
