@@ -8,6 +8,10 @@ from collections import Counter
 
 
 def get_most_popular_word(text):
+    """
+    Return most popular word
+    or '—' if text is empty or there is more than one most popular word
+    """
     words = text.split()
     most_popular = Counter(words).most_common(2)
     if not most_popular or (len(most_popular) == 2 and most_popular[0][1] == most_popular[1][1]):
