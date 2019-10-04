@@ -65,6 +65,11 @@ def main():
     assert Graph(dists).find_shortest_way(5, 1) == 177
     print("tests ok")
 
+    lst = eval(input("Provide a list: "))
+    start_node = int(input("Provide a start_node id: "))
+    end_node = int(input("Provide an end_node id: "))
+    print(Graph(lst).find_shortest_way(start_node, end_node))
+
 
 if __name__ == '__main__':
     sys.exit(main())

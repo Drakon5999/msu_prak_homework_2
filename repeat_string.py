@@ -35,7 +35,7 @@ def main():
     if len(string) % potential_block_size == 0:
         result = potential_block_size
 
-    print(result)
+    print(len(string)/result)
     return 0
 
 

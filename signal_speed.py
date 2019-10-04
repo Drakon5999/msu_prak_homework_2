@@ -59,6 +59,11 @@ def main():
     assert Graph(times, N).find_signal_spread_time(X) == 2
     print("test ok")
 
+    lst = eval(input("Provide a list: "))
+    n_value = int(input("Provide a N: "))
+    x_value = int(input("Provide an X: "))
+    print(Graph(lst, n_value).find_signal_spread_time(x_value))
+
 
 if __name__ == '__main__':
     sys.exit(main())
